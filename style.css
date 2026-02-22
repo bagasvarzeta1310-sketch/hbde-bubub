@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    background: url('assets/bg-pixel.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Courier New', Courier, monospace;
+    overflow: hidden;
+}
+
+.desktop {
+    width: 100vw; height: 100vh;
+    display: flex; justify-content: center; align-items: center;
+}
+
+.window {
+    width: 350px;
+    background: #c0c0c0;
+    border: 3px solid #fff;
+    box-shadow: 5px 5px 0px #000;
+    padding: 2px;
+}
+
+.title-bar {
+    background: linear-gradient(90deg, #ff4d6d, #ffb3c1);
+    color: white; padding: 5px 10px;
+    display: flex; justify-content: space-between; font-weight: bold;
+}
+
+.window-body {
+    padding: 20px; text-align: center;
+    background: #fdf2f2; border: 2px inset #fff;
+}
+
+.pixel-gif { width: 100px; margin-bottom: 10px; }
+
+.btn-group button {
+    padding: 8px 20px; border: 2px outset #fff;
+    background: #ff4d6d; color: white; cursor: pointer;
+}
+
+.hidden { display: none; }
+
+.grid-menu { display: flex; justify-content: space-around; }
+
+.icon { cursor: pointer; transition: 0.2s; padding: 10px; border-radius: 5px; }
+.icon:hover { background: #ffb3c1; transform: scale(1.1); }
+
+#content-window { width: 80%; max-width: 600px; position: absolute; z-index: 10; }
+
+/* Styling Galeri */
+.gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); gap: 10px; }
+.gallery-grid img { width: 100%; border: 2px solid #ff4d6d; }
+
+/* Styling Surat */
+.letter-text { text-align: justify; line-height: 1.6; font-size: 14px; color: #333; max-height: 400px; overflow-y: auto; }
