@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HBD Naysila ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="desktop">
+        <div class="window" id="main-window">
+            <div class="title-bar">
+                <div class="title-text">Thinking of you...</div>
+                <div class="close-btn">X</div>
+            </div>
+            <div class="window-body">
+                <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHp1eHByZzR3eHByZzR3eHByZzR3eHByZzR3eHByZzR3JmVwPXYxX2ludGVybmFsX2dpZl9ieV9iYyZjdD1n/MDJ9IbMvCHeZ2/giphy.gif" class="pixel-gif">
+                <p>Click to see why...</p>
+                <div class="btn-group">
+                    <button onclick="nextStep(1)">YES</button>
+                    <button id="ignore-btn" onmouseover="moveBtn()">IGNORE</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="window hidden" id="menu-window">
+            <div class="title-bar"><div class="title-text">Choose One :)</div></div>
+            <div class="window-body grid-menu">
+                <div class="icon" onclick="showContent('gallery')">📸<br>Gallery</div>
+                <div class="icon" onclick="showContent('letter')">📜<br>Letter</div>
+                <div class="icon" onclick="showContent('video')">🎁<br>Video</div>
+            </div>
+        </div>
+
+        <div class="window hidden" id="content-window">
+            <div class="title-bar">
+                <div class="title-text" id="content-title">Content</div>
+                <div class="close-btn" onclick="closeContent()">X</div>
+            </div>
+            <div class="window-body" id="content-body">
+                </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
